@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+    font-family: "Delius", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    background:  
+    url('/src/img/minsea.png');
+    /* 背景图像居中 */
+    background-position: center center;
+    /* 背景图不平铺 */
+    background-repeat: no-repeat;
+    /* 背景图固定 */
+    background-attachment: fixed;
+    /* 背景图基于容器大小伸缩 */
+    background-size: cover;
+    /* 背景颜色 */
+    background-color: #464646;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    max-width: 1100px;
+    position: relative;
+
+}
+.footer {
+    
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+
+}
+/* 左边主体样式--------------------*/
+.left-block {
+
+    width: 230px;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    padding: 0 15px;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.avatar {
+    background-image: url(/src/img/mikasa-ackerman-snk.gif);
+    background-size: cover;
+    position: relative;
+    border-radius: 50%;
+    width: 90%;
+    margin-top: 50px;
+    aspect-ratio: 1/1;
+    -webkit-animation: rotate-in-2-fwd-cw 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: rotate-in-2-fwd-cw 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.avatar-border {
+    position: absolute;
+    top: 1%;
+    left: -10%;
+    width: 110%;
+    z-index: 1;
+}
+
+.motto-block {
+    position: relative;
+    width: 90%;
+    height: 120px;
+    margin-top: 20px;
+    backdrop-filter: blur(10px);
+    background: #ffffff1f;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    i {
+      position: relative;
+    }
+}
+.motto {
+  position: relative;
+  padding: 20px;
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation:text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.clock-block {
+    position: relative;
+    width: 90%;
+    height: 90px;
+    margin-top: 20px;
+    backdrop-filter: blur(10px);
+    background: #0000005d;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.info-block {
+  position: relative;
+  width: 90%;
+  height: 220px;
+  margin-top: 20px;
+  backdrop-filter: blur(10px);
+  background: #ffffff1f;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 10px;
+}
+
+.info-item {
+
+  position: relative;
+  display: flex;
+  margin: 5px;
+}
+
+/*-------------------------------*/
+
+/* 右边主体样式 -------------------*/
+.right-block {
+    display: flex;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 50px;
+    width: calc(100% - 230px); /*减去左边区域的宽度*/
+    height: 100%;
+    float: right;
+    flex-direction: column;
+}
+
+/* hello 动画效果 ----------------*/
+.hello {
+    position: relative;
+    right:0;
+    height: 60px;
+    overflow: hidden;
+    font-family: "Lato", sans-serif;
+    font-size: 60px;
+    line-height: 60px;
+    color: lightblue;
+    margin-top: 5px;
+  }
+  .content__container {
+    font-weight: 600;
+    overflow: hidden;
+    height: 80px;
+    padding: 0 40px;
+  }
+  .content__container:before {
+    content: "[";
+    left: 0;
+  }
+  .content__container:after {
+    content: "]";
+    position: absolute;
+    right: 0;
+  }
+  .content__container:after, .content__container:before {
+    position: absolute;
+    top: 0;
+    color: #16a085;
+    font-size: 62px;
+    line-height: 60px;
+    -webkit-animation-name: opacity;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: opacity;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  .content__container__text {
+    display: inline;
+    float: left;
+    margin: 0;
+  }
+  .content__container__list {
+    margin-top: 0;
+    padding-left: 200px;
+    width: 500px;
+    text-align: left;
+    list-style: none;
+    -webkit-animation-name: change;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: change;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+  .content__container__list__item {
+    line-height: 60px;
+    margin: 0;
+  }
+/*--------------------------------*/
+
+/* 你的名字------------------------*/
+.name {
+    position: relative;
+    font-size: 60px;
+    height: 110px;
+    display: flex;
+    
+}
+/* id显示方案1：模糊出场 +渐变
+.id {
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: -webkit-linear-gradient(left, #b612cf, #0518e6 25%, #b612cf 50%, #0518e6 75%, #b612cf);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-background-size: 200% 100%;
+    background-size: 200% 100%;
+    -webkit-animation: maskedAnimation 4s infinite linear,
+    text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both,
+    maskedAnimation 4s infinite linear;
+}
+*/
+
+/* id显示方案2：发光渐变。要使用id显示方案1，请从这里开始注释 */
+.id {
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .id, .id::after {
+    margin: 20;
+    background: linear-gradient(90deg in lch longer hue, oklch(105% 90% 0) 0 0);
+  /*   background: linear-gradient(90deg in hsl longer hue, hsl(0 100% 70%) 0 0); */
+    background-size: 500% 100%;
+    animation: blend 30s infinite linear;
+    color: transparent;
+    background-clip: text;
+  }
+  
+  .id::after {
+    content: 'g0dmao';
+    filter: blur(8px);
+    position: absolute;
+  /*   z-index: -1; */
+    left: 0;
+    mix-blend-mode: plus-lighter;
+  }
+  
+  @keyframes blend {
+    to { background-position: 500% 100%; }
+  }
+/* 要使用id显示方案1，请在这里结束注释 */
+/*--------------------------------*/
+
+.fa-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin-top: 25px;
+  justify-content: end;
+}
+
+.fiter {
+  height: 100%;
+  width: 350px;
+  position: fixed;
+  z-index: 200;
+
+  background: 
+    /* 使用 linear-gradient 和背景图结合 */
+    url('/src/img/remove-minsea.png');
+    /* 背景图像居中 */
+    background-position: center center;
+    /* 背景图不平铺 */
+    background-repeat: no-repeat;
+    /* 背景图固定 */
+    background-attachment: fixed;
+    /* 背景图基于容器大小伸缩 */
+    background-size: cover;
+    /* 背景颜色 */
+    background-color: #ffffff00;
+}

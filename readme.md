@@ -1,16 +1,6 @@
----
-title: 属于自己的引导页
-date: 2025-03-01 13:59:00
-tags:
-  - 网页
-  - web
-categories:
-  - web
-description: 自己设计了个属于自己的引导页
----
 ## 网站截图
 
-![](Snipaste_2025-03-01_13-57-17.png)
+![](https://im.godmao.top/2025/03/01/%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%BC%95%E5%AF%BC%E9%A1%B5/Snipaste_2025-03-01_13-57-17.png)
 
 ## 感谢
 

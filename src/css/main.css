@@ -18,7 +18,7 @@ body {
     font-style: normal;
     color: #fff;
     background:  
-    url('/src/img/minsea.png');
+    url('./src/img/minsea.png');
     /* 背景图像居中 */
     background-position: center center;
     /* 背景图不平铺 */
@@ -63,7 +63,7 @@ body {
 }
 
 .avatar {
-    background-image: url(/src/img/mikasa-ackerman-snk.gif);
+    background-image: url(./src/img/mikasa-ackerman-snk.gif);
     background-size: cover;
     position: relative;
     border-radius: 50%;
@@ -291,7 +291,7 @@ body {
 
   background: 
     /* 使用 linear-gradient 和背景图结合 */
-    url('/src/img/remove-minsea.png');
+    url('./src/img/remove-minsea.png');
     /* 背景图像居中 */
     background-position: center center;
     /* 背景图不平铺 */

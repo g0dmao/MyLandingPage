@@ -1,13 +1,3 @@
----
-title: 属于自己的引导页
-date: 2025-03-01 13:59:00
-tags:
-  - 网页
-  - web
-categories:
-  - web
-description: 自己设计了个属于自己的引导页
----
 ## 网站截图
 
 ![](Snipaste_2025-03-01_13-57-17.png)

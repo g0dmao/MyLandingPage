@@ -1,250 +1,70 @@
 <!DOCTYPE html>
-<head>
+<html>
+    <head>
 
-<!-- 元数据 -->
-<meta charset="utf-8">
-<meta name="author" content="茂神·g0dma0">
-<meta name="subtitle" content="欢迎">
-<meta name="Description" content="g0dmao的引导页">
-<meta name="keywords" content="g0dmao引导页,g0dmao开始页,g0dmao,g0dmao主页,茂神·g0dmao,搜索聚合,开始页">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=no">
-
-<title>g0dmao的引导页</title>
-
-<!-- 引入 css样式 -->
-<link rel="stylesheet" href="./src/css/main.css">
-<link rel="stylesheet" href="./src/css/animation.css">
-<link rel="stylesheet" href="./src/css/search.css">
-<link rel="stylesheet" href="./src/css/expand.css">
-<link rel="stylesheet" href="./src/css/clock.css">
-<link rel="stylesheet" href="./src/css/palyer.css">
-
-<!-- 引入 谷歌字体 -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
-
-<!-- 引入 Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-</head>
-
-<body>
-
-<div class="fiter"></div><!-- 遮罩,突出显示人物 -->
-
-<div class="main">
-
-    <!--左边主体元素--------------------------------------->
+    <!-- 元数据 -->
+    <meta charset="utf-8">
+    <meta name="author" content="GoDm@">
+    <meta name="subtitle" content="欢迎">
+    <meta name="Description" content="GoDm@的主页">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=no">
     
-    <div class="left-block">
-        
-        <img class="avatar-border" src="./src/img/logokuang.png">
-        <div class="avatar"></div>
-        
-        <div class="motto-block">
-            <i class="fa-solid fa-quote-left" style="width: 0;left: 5px;top: 3px; height: 30%;"></i>
-            <div class="motto">所有的伟大都源于一个勇敢的开始!</div>
-            <i class="fa-solid fa-quote-right" style="width: 0;left: 90%;height: 30%;"></i>
-        </div>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+        html{
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            background-color: #F9F6F2;
+            color: #3C3C3C ;
+        }
 
-        <div class="clock-block">
-            <div class="clock">
-                <div class="block" data-num="0"></div>
-                <div class="block" data-num="1"></div>
-                <div class="block" data-num="2"></div>
-                <div class="block" data-num="3"></div>
-                <div class="block" data-num="4"></div>
-                <div class="block" data-num="5"></div>
-                <div class="block" data-num="6"></div>
-                <div class="block" data-num="7"></div>
-                <div class="block" data-num="8"></div>
-                <div class="block" data-num="9"></div>
-                <div class="block" data-num="10"></div>
-                <div class="block" data-num="11"></div>
-                <div class="block" data-num="12"></div>
-                <div class="block" data-num="13"></div>
-                <div class="block" data-num="14"></div>
-                <div class="block" data-num="15"></div>
-                <div class="block" data-num="16"></div>
-                <div class="block" data-num="17"></div>
-                <div class="block" data-num="18"></div>
-                <div class="block" data-num="19"></div>
-                <div class="block" data-num="20"></div>
-                <div class="block" data-num="21"></div>
-                <div class="block" data-num="22"></div>
-                <div class="block" data-num="23"></div>
-                <div class="block" data-num="24"></div>
-                <div class="block" data-num="25"></div>
-                <div class="block" data-num="26"></div>
-                <div class="block" data-num="27"></div>
-                <div class="block" data-num="28"></div>
-                <div class="block" data-num="29"></div>
-                <div class="block" data-num="30"></div>
-                <div class="block" data-num="31"></div>
-                <div class="block" data-num="32"></div>
-                <div class="block" data-num="33"></div>
-                <div class="block" data-num="34"></div>
-                <div class="block" data-num="35"></div>
-                <div class="block" data-num="36"></div>
-                <div class="block" data-num="37"></div>
-                <div class="block" data-num="38"></div>
-                <div class="block" data-num="39"></div>
-                <div class="block" data-num="40"></div>
-                <div class="block" data-num="41"></div>
-                <div class="block" data-num="42"></div>
-                <div class="block" data-num="43"></div>
-                <div class="block" data-num="44"></div>
-                <div class="block" data-num="45"></div>
-                <div class="block" data-num="46"></div>
-                <div class="block" data-num="47"></div>
-                <div class="block" data-num="48"></div>
-                <div class="block" data-num="49"></div>
-                <div class="block" data-num="50"></div>
-                <div class="block" data-num="51"></div>
-                <div class="block" data-num="52"></div>
-                <div class="block" data-num="53"></div>
-                <div class="block" data-num="54"></div>
-                <div class="block" data-num="55"></div>
-                <div class="block" data-num="56"></div>
-                <div class="block" data-num="57"></div>
-                <div class="block" data-num="58"></div>
-                <div class="block" data-num="59"></div>
-                <div class="divider"></div>
-            </div>
-        </div>      
-        
-        <div class="info-block">
-            <div class="info-item"><!--图标有点没对齐 改一下左外边距对齐一下-->
-                <div style="margin-right:10px;margin-left:2px;"><i class="fa-solid fa-location-dot"></i></div> <div>Chengdu,Sichuan.</div>
-            </div>
-            <div class="info-item"> 
-                <div style="margin-right:10px;"><i class="fa-solid fa-briefcase"></i></div> <div>student.</div>
-            </div>
-            <div class="info-item">
-                <div style="margin-right:10px;"><i class="fa-solid fa-user"></i></div> <div>一名愚蠢的大学生...放寒假没事了解了点网页设计。可我的主要方向好像是嵌入式🤔</div>
-            </div>
-        </div>
+        .container {
+            margin: 50px auto 40px auto;
+            text-align: center;
+        }
 
+        h1 {
+            font-size: 60px;
+            font-weight: 100;
+        }
+
+        a:hover{
+            color: #A855F7;
+        }
+        a{
+            color: #3B82F6;
+            text-decoration: underline;
+            text-decoration-style: dotted;
+        }
+        
+       div.sign{
+            bottom: 0;
+            right: 0;
+            position: absolute;
+       }
+
+    </style>
+
+    <title>GoDm@的主页</title>
+
+    </head>
+    <body>
+        <div class="container">
+            <h1>404</h1>
+            <img src="./src/img/fire.gif">
+            
+            <p style="margin-bottom: 0;"> 
+                <strong>“未曾定义，只因我正在成为。”</strong>
+            </p>
+            <p style="margin-top: 3px;">"Never to be defined, but always to be."</p>
+            
+            <p>I'm GoDm@.</p>
+            <p>
+                <a href="https://github.com/g0dmao">github</a> | <a href="https://blog.godmao.top/">Blog</a>
+            </p>
+        </div>
+    </body>
+    <div class="sign">
+        <img src="./src/img/CJ.png">
     </div>
-
-    <!--左边主体元素--------------------------------------->
-    
-    <!--右边主体元素--------------------------------------->
-    
-    <div class="right-block">
-        <div class="hello">
-            <div class="content__container">
-            <p class="content__container__text">
-                Hello
-            </p>              
-            <ul class="content__container__list">
-                <li class="content__container__list__item">World !</li>
-                <li class="content__container__list__item">Sir !</li>
-                <li class="content__container__list__item">Madam !</li>
-                <li class="content__container__list__item">All !</li>
-            </ul>
-            </div>
-        </div>
-        <div class="name">
-            <style>
-                @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-            </style>
-            <div class="id">g0dmao</div>
-            <div style="font-weight: 400;margin-top: 20px;margin-left: 20px;">here!</div>     
-        </div>
-
-
-        <div class="search-container"> <!--搜索框-->
-            <div class="search-box">
-                <input type="text" id="search-input" placeholder="搜点什么?">
-                <button id="search-engine-button">
-                    <img src="./src/img/bing.svg" alt="Bing" id="engine-icon">
-                </button>
-                <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-            <div class="engine-selector" id="engine-selector">
-                <div class="engine-option" data-engine="bing">
-                    <img src="./src/img/bing.svg" alt="Bing">
-                    <span>by的</span>
-                </div>
-                <div class="engine-option" data-engine="google">
-                    <img src="./src/img/google.svg" alt="Google">
-                    <span>咕噜咕噜</span>
-                </div>
-                <div class="engine-option" data-engine="baidu">
-                    <img src="./src/img/baidu.svg" alt="Baidu">
-                    <span>度娘</span>
-                </div>
-            </div>
-        </div><!--搜索框-->
-        <div class="fa-container"><!--父容器-->
-            
-
-            <div class="container"><!--展开界面的容器-->
-                <div class="list">
-                    <button class="list-item" onclick="window.location.href='https://im.godmao.top/'">
-                    <div class="icon">
-                        <i class="fa-solid fa-blog fa-xl" style="color: #ffffff;"></i>
-                    </div>
-                    <div class="content">
-                    <div class="title">我的博客</div>
-                    <div class="subtitle">随便写写...</div>
-                    </div>
-                    <div class="date">my blog.</div>
-                    </button>
-            
-                <button class="list-item" onclick="window.location.href='https://github.com/g0dmao'">
-                    <div class="icon">
-                        <i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i>
-                    </div>
-                    <div class="content">
-                    <div class="title">github</div>
-                    <div class="subtitle">我的仓库</div>
-                    </div>
-                    <div class="date">github.</div>
-                </button>
-            
-                <button class="list-item">
-                    <div class="icon">
-                        <i class="fa-solid fa-envelope fa-xl" style="color: #ffffff;"></i>
-                    </div>
-                    <div class="content">
-                    <div class="title">我的邮箱</div>
-                    <div class="subtitle">god_mao@foxmail.com</div>
-                    </div>
-                    <div class="date">e-mail.</div>
-                </div>
-                </button>
-            
-                <button class="show-hide-btn">
-                <span class="show">Show All</span>
-                <span class="hide">Hide</span>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor">
-                    <path d="M4 6l4 4 4-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                </button>
-            </div><!--展开界面的容器-->
-            
-            
-        </div><!--父容器-->
-    </div>
-    <!--右边主体元素--------------------------------------->
-</div> 
-
-<!--脚注--------------------------------------->
-<div class="footer">
-<div style="display: flex;justify-content: end;">made by g0dmao |&ThinSpace;<a href="https://im.godmao.top/2025/03/01/%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%BC%95%E5%AF%BC%E9%A1%B5/" style="color: #fff;font-weight: bold;">Thanks</a> </div>
-<div style="display: flex;justify-content: end;">since 2025</div>
-</div>
-<!--脚注--------------------------------------->
-
-<!--脚本--------------------------------------->
-<script type="text/javascript" src="./src/js/search.js"></script>
-<script type="text/javascript" src="./src/js/expand.js"></script>
-<script type="text/javascript" src="./src/js/clock.js"></script>
-<!--脚本--------------------------------------->
-
-</body>
 
 </html>
